@@ -12,22 +12,38 @@ public class Qu_04_07 {
 
 	public static void main(String[] args) {
 
-		int total = 0;
-		for (int i=1; i<=100; i++)
-		{
-			if (i%3 == 0 || i%7 == 0)
-			{
-				if (i%3 == 0 && i%7 == 0) // if (i%(3*7)!=0) P
-				{}						  // total += i;
-				else					  // System.out.print(i+"+");
-				{
-					System.out.print(i);
-					total += i;
+//		int total = 0;
+//		for (int i=1; i<=100; i++)
+//		{
+//			if (i%3 == 0 || i%7 == 0)
+//			{
+//				if (i%3 == 0 && i%7 == 0) // if (i%(3*7)!=0) P
+//				{}						  // total += i;
+//				else					  // System.out.print(i+"+");
+//				{
+//					System.out.print(i);
+//					total += i;
+//				}
+//				System.out.print("+");
+//			}
+//		}
+//		System.out.printf("= %d", total);
+		int total=0;
+		
+		for (int i=1; i<=100; i++) {
+			
+			if (i%3 == 0 && i%7 == 0) {
+			}
+			else if (i%3 == 0 || i%7 == 0){
+				System.out.print(i);
+				total += i;
+				if (i==99) {
 				}
-				System.out.print("+");
+				else {
+					System.out.print("+");
+				}
 			}
 		}
 		System.out.printf("= %d", total);
 	}
-
 }

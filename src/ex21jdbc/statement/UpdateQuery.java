@@ -10,7 +10,7 @@ public class UpdateQuery extends ConnectDB {
 	}
 	
 	@Override
-	void execute() {
+	public void execute() {
 		try {
 			stmt = con.createStatement();
 			
